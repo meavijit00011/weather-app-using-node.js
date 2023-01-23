@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.search__bar__container {
+  width: fit-content;
+  margin: 40px auto 20px auto;
+}
+.search__bar__container .search__btn__container {
+  text-align: center;
+}
+.search__bar__container .search__btn__container button {
+  padding: 7px 20px;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  background-color: green;
+  border: none;
+}
+.search__bar__container .input__container {
+  width: 350px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 10px;
+}
+.search__bar__container input {
+  outline: none;
+  width: 250px;
+  height: 40px;
+  border: none;
+  background: transparent;
+}
+.search__bar__container .input__container img {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+.search__bar__container .input__container .refresh__icon__animation{
+      animation: animate 2s infinite;
+}
+@keyframes animate {
+   100%{
+     rotate:360deg
+   }
+}
+.weather__details__show__container {
+  width: 350px;
+  margin: 20px auto;
+  display: flex;
+  transition: .6s;
+}
+.weather__details__show__container .error__message{
+  width: 350px;
+  text-align: center;
+  color: red;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .date {
+  font-size: 14px;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .min__max__temp__container {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .temp__container {
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .temp__container .weather__description{
+    text-transform: capitalize;
+    text-align: center;
+  }
+.weather__details__show__container
+  .today__weather__details__show__container
+  .temp__container
+  .right__temp__container,
+.left__temp__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90px;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .temp__container
+  .right__temp__container
+  img {
+  display: inline-block;
+  margin: auto;
+  height: 70px;
+  width: 70px;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .temp__container
+  .large__temp__show {
+  font-size: 60px;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .current__details__container {
+  margin-top: 20px;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .current__details__container
+  div {
+  width: 200px;
+  display: flex;
+  margin-top: 5px;
+  height: fit-content;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .wind__details__container {
+  margin-top: 20px;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .wind__details__container
+  .wind__heading__img__container {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .wind__details__container
+  .wind__heading__img__container
+  img {
+  height: 25px;
+  width: 25px;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .wind__details__container
+  .left__right__details__container {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  margin-top: 20px;
+  text-align: center;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .wind__details__container
+  .left__right__details__container
+  .left__detail
+  .content__1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: orange;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .wind__details__container
+  .left__right__details__container
+  .left__detail
+  .content__2 {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .wind__details__container
+  .left__right__details__container
+  .right__detail,
+.left__detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 55px;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .wind__details__container
+  .left__right__details__container
+  .right__detail
+  .content__1
+  img {
+    height: 30px;
+    width: 30px;
+  margin: auto;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .sunlight__detail {
+  margin-top: 20px;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .sunlight__detail
+  .sunlight__heading__img__container {
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+  align-items: center;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .sunlight__detail
+  .sunlight__heading__img__container
+  img {
+  height: 30px;
+  width: 30px;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .sunlight__detail
+  .left__right__details__container {
+  display: flex;
+  width: 250px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.weather__details__show__container
+  .today__weather__details__show__container
+  .sunlight__detail
+  .left__right__details__container
+  .left__detail,
+.right__detail {
+  text-align: center;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+}
